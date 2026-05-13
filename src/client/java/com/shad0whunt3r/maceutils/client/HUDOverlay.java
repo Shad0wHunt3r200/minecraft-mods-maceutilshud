@@ -3,28 +3,34 @@ package com.shad0whunt3r.maceutils.client;
 import net.minecraft.client.DeltaTracker;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.resources.Identifier;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
 
 public class HUDOverlay {
     public static void render(GuiGraphics graphics, DeltaTracker tickDelta) {
-        System.out.println("RENDER CALLED");
         if (!ModConfig.INSTANCE.enabled) return;
 
         int screenWidth = Minecraft.getInstance().getWindow().getGuiScaledWidth();
-        int itemCount = 3;
 
         int x = screenWidth - 36;
-        int y = (Minecraft.getInstance().getWindow().getGuiScaledHeight() / 2) - (itemCount * 20);
+        int y = (Minecraft.getInstance().getWindow().getGuiScaledHeight() / 2) - (ModConfig.INSTANCE.trackedItems.size() * 20 / 2);
 
-        drawItem(graphics, Items.WIND_CHARGE, ItemCounter.countItems(Items.WIND_CHARGE), x, y);
-        y += 20;
 
-        drawItem(graphics, Items.ENDER_PEARL, ItemCounter.countItems(Items.ENDER_PEARL), x, y);
-        y += 20;
+        for (String item : ModConfig.INSTANCE.trackedItems) {
+            Item resolvedItem = BuiltInRegistries.ITEM.getValue(Identifier.parse(item));
 
-        drawItem(graphics, Items.ELYTRA, ItemCounter.getDurability(Items.ELYTRA), x, y);
+            int count;
+            if (resolvedItem.getDefaultInstance().isDamageableItem()) {
+                count = ItemCounter.getDurability(resolvedItem);
+            } else {
+                count = ItemCounter.countItems(resolvedItem);
+            }
+
+            drawItem(graphics, resolvedItem, count, x, y);
+            y += 20;
+        }
     }
 
     private static void drawItem(GuiGraphics graphics, Item item, int count, int x, int y) {

@@ -10,10 +10,17 @@ import java.io.Reader;
 import java.io.Writer;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.util.ArrayList;
+import java.util.List;
 
 public class ModConfig {
     public boolean enabled = true;
     public int textColor = 0xFFFFFFFF;
+    public List<String> trackedItems = new ArrayList<>(List.of(
+            "minecraft:wind_charge",
+            "minecraft:ender_pearl",
+            "minecraft:elytra"
+    ));
 
     private static final Gson GSON = new GsonBuilder().setPrettyPrinting().create();
     private static final Path CONFIG_PATH = FabricLoader.getInstance()
