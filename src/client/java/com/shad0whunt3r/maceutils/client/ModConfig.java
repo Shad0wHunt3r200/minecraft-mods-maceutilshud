@@ -33,6 +33,18 @@ public class ModConfig {
             save();
             return;
         }
+        try (Reader reader = Files.newBufferedReader(CONFIG_PATH)) {
+            INSTANCE = GSON.fromJson(reader, ModConfig.class);
+            if (INSTANCE.trackedItems == null) {
+                INSTANCE.trackedItems = new ArrayList<>(List.of(
+                        "minecraft:wind_charge",
+                        "minecraft:ender_pearl",
+                        "minecraft:elytra"
+                ));
+            }
+        } catch (IOException e) {
+            System.err.println("Failed to load Mace Utils config: " + e.getMessage());
+        }
 
         try (Reader reader = Files.newBufferedReader(CONFIG_PATH)) {
             INSTANCE = GSON.fromJson(reader, ModConfig.class);

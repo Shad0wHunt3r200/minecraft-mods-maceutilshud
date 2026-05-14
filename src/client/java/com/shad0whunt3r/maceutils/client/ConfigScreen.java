@@ -1,9 +1,8 @@
 package com.shad0whunt3r.maceutils.client;
 
-import dev.isxander.yacl3.api.ConfigCategory;
-import dev.isxander.yacl3.api.Option;
-import dev.isxander.yacl3.api.YetAnotherConfigLib;
+import dev.isxander.yacl3.api.*;
 import dev.isxander.yacl3.api.controller.ColorControllerBuilder;
+import dev.isxander.yacl3.api.controller.StringControllerBuilder;
 import dev.isxander.yacl3.api.controller.TickBoxControllerBuilder;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
@@ -33,10 +32,23 @@ public class ConfigScreen extends Screen {
                 .controller(ColorControllerBuilder::create)
                 .build();
 
+        var trackedItemsOption = ListOption.<String>createBuilder()
+                .name(Component.literal("Tracked Items"))
+                .description(OptionDescription.of(Component.literal("List of item IDs to be tracked (e.g., minecraft:elytra)")))
+                .binding(
+                        List.of("minecraft:wind_charge", "minecraft:ender_pearl", "minecraft:elytra"), // The Default
+                        () -> ModConfig.INSTANCE.trackedItems,
+                        val -> ModConfig.INSTANCE.trackedItems = val
+                )
+                .controller(StringControllerBuilder::create)
+                .initial("")
+                .build();
+
         var configCategory = ConfigCategory.createBuilder()
                 .name(Component.literal("General"))
                 .option(enabledToggle)
                 .option(colorSelector)
+                .option(trackedItemsOption)
                 .build();
 
         var config = YetAnotherConfigLib.createBuilder()
