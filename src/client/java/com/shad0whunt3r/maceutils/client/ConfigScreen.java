@@ -8,6 +8,7 @@ import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
 
 import java.awt.*;
+import java.util.ArrayList;
 import java.util.List;
 
 public class ConfigScreen extends Screen {
@@ -38,7 +39,7 @@ public class ConfigScreen extends Screen {
                 .binding(
                         List.of("minecraft:wind_charge", "minecraft:ender_pearl", "minecraft:elytra"), // The Default
                         () -> ModConfig.INSTANCE.trackedItems,
-                        val -> ModConfig.INSTANCE.trackedItems = val
+                        val -> ModConfig.INSTANCE.trackedItems = new ArrayList<>(val)
                 )
                 .controller(StringControllerBuilder::create)
                 .initial("")
