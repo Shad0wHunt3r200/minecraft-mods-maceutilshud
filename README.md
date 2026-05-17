@@ -1,13 +1,13 @@
-# minecraft-mods-maceutilshud
-The code and notes for a Mace Utils HUD mod (Fabric)
+# Mace Utils HUD 
+The code and notes for a Mace Utils HUD v0.1.x
 
-### v1.0.0 -alpha
+---
+
+## 🏷️ Versions
+
+### v0.1.0
 #### Features:
-Windcharge, Pearl, Elytra durability counters with icons
-Fixed HUD position
-Toggle enable item selector in config menu
-
-## Dependencies
-Mod Menu
-YACL
-Fabric API
+ - Windcharge, Pearl, Elytra durability counters with icons
+ - Fixed HUD position
+ - Toggle mod
+ - Adjust counter text color
