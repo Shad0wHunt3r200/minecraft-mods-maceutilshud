@@ -3,7 +3,7 @@
 	"id": "mace-utils-hud",
 	"version": "${version}",
 	"name": "Mace Utils HUD",
-	"description": "Gives a fixed position HUD for counting the number of windcharges, pearls and elytra durability",
+	"description": "A HUD mod for Mace PvP in Minecraft",
 	"authors": [
 		"Shad0wHunt3r"
 	],
