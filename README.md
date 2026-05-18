@@ -1,10 +1,20 @@
 # Mace Utils HUD
 
-This is a mod made for the Mace PvP gamemode in Minecraft. It is meant to gives useful information to assist in the intensive gameplay of this gamemode. This mod does not provide any unfair advantage during gameplay.
+## 📓 Mod Info
+
+This is a mod made for the Mace PvP gamemode in Minecraft. It is meant to gives useful information to assist in the intensive gameplay of this gamemode. **This mod does not provide any unfair advantage during gameplay.**
 
 While this mod is mainly developed for Mace PvP, it can also be utilised in other gamemodes like Vanilla (Crystal) PvP. 
 
 ---
+
+### ✨ Features
+*For older versions' features, go to the release notes for that version*
+
+**Latest Version:** v0.2.0
+
+>[!WARNING]
+>This section is incomplete
 
 ### 🧩 Dependencies
 
@@ -12,6 +22,7 @@ While this mod is mainly developed for Mace PvP, it can also be utilised in othe
 - [YetAnotherConfigLib (YACL)](https://modrinth.com/mod/yacl)
 - [Fabric API](https://modrinth.com/mod/fabric-api)
 
+>[!CAUTION]
 This mod is only compatible with Minecraft: Java Edition **1.21.11** and Fabric Loader for **1.21.11**
 It has not been tested with and will most likely not work with any other versions
 
@@ -22,6 +33,8 @@ Latest releases can be found in this repository under Releases
 >[!NOTE]
 >**Version Format**<br>
 >major.minor.patch
+
+---
 
 ## 🛠️ Building from sources
 
@@ -41,8 +54,22 @@ with `./gradlew.bat` (Windows) or `./gradlew` (macOS and Linux).
     - Typically, newer versions of Gradle will work without issues, but the build script is only tested against the
       version used by the [wrapper script](/gradle/wrapper/gradle-wrapper.properties).
 
-### ℹ️ Other Information
+---
+
+## ℹ️ Other Information
+
+### 📝 Credits
 
 This mod was made using the **Fabric Mod Template** at https://fabricmc.net/develop/template/  
 
 The example mod can also be found on GitHub at https://github.com/FabricMC/fabric-example-mod/
+
+### 🔀 Branch information
+
+This branch is the latest stable release across all versions. <br>
+For the latest release for older versions, go to that version's branch (like 1.21.11). <br>
+
+*For the latest/indev releases, go to the development branch.*
+>[!WARNING]
+>The indev features of this mod may have **errors, bugs and bugfixes** that may not work
+>The features may also be **incomplete**
