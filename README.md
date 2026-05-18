@@ -1,20 +1,20 @@
-# Mace Utils HUD
+# Mace Utils HUD [Development]
 
-## 📓 Mod Info
+_Please refer to the README in the `main` branch for the full details about this mod_
 
-This is a mod made for the Mace PvP gamemode in Minecraft. It is meant to gives useful information to assist in the intensive gameplay of this gamemode. **This mod does not provide any unfair advantage during gameplay.**
-
-While this mod is mainly developed for Mace PvP, it can also be utilised in other gamemodes like Vanilla (Crystal) PvP. 
-
----
-
-### ✨ Features
+## 🗒️ Indev Work Details
 *For older versions' features, go to the release notes for that version*
 
-**Latest Version:** v0.2.0
+**Planned next version:** 0.3.0
 
->[!WARNING]
->This section is incomplete
+### ✨ Features
+Working on a new part of the mod, the combat utils (blocks fallen, elytra angle etc.)
+The item counter will receive updates to customization later on.
+
+### 🪲 Bugfixes
+`None`
+
+---
 
 ### 🧩 Dependencies
 
@@ -25,14 +25,6 @@ While this mod is mainly developed for Mace PvP, it can also be utilised in othe
 >[!CAUTION]
 This mod is only compatible with Minecraft: Java Edition **1.21.11** and Fabric Loader for **1.21.11**
 It has not been tested with and will most likely not work with any other versions
-
-### 📥 Downloads
-
-Latest releases can be found in this repository under Releases
-
->[!NOTE]
->**Version Format**<br>
->major.minor.patch
 
 ---
 
@@ -66,10 +58,10 @@ The example mod can also be found on GitHub at https://github.com/FabricMC/fabri
 
 ### 🔀 Branch information
 
-This branch is the latest stable release across all versions. <br>
-For the latest release for older versions, go to that version's branch (like 1.21.11). <br>
+This branch contains code that is in development (indev) and is most likely incomplete. Use this code with caution <br>
+For the latest version's code, go to the `main` branch.
+For older versions', go to that version's branch (like `1.21.11`). <br>
 
-*For the latest/indev releases, go to the development branch.*
 >[!WARNING]
 >The indev features of this mod may have **errors, bugs and bugfixes** that may not work
 >The features may also be **incomplete**
