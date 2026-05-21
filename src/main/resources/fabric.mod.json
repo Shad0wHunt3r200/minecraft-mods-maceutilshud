@@ -8,10 +8,11 @@
 		"Shad0wHunt3r"
 	],
 	"contact": {
-		"sources": "https://github.com/Shad0wHunt3r200/minecraft-mods-itemcountergui"
+		"sources": "https://github.com/Shad0wHunt3r200/minecraft-mods-maceutilshud",
+		"issues": "https://github.com/Shad0wHunt3r200/minecraft-mods-maceutishud/issues"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/mace-utils-hud/icon.png",
+	"icon": "assets/mace-utils-hud/Mace.png",
 	"environment": "client",
 	"entrypoints": {
 		"main": [
