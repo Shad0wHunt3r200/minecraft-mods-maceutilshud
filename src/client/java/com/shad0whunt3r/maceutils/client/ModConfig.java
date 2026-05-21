@@ -4,6 +4,7 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
 import net.fabricmc.loader.api.FabricLoader;
+import net.minecraft.client.Minecraft;
 
 import java.io.IOException;
 import java.io.Reader;
@@ -14,8 +15,21 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ModConfig {
+    public int itemTrackerX = 0;
+    public int itemTrackerY = 0;
+
+    public static int defaultX() {
+        return Minecraft.getInstance().getWindow().getGuiScaledWidth() - 36;
+    }
+
+    public static int defaultY() {
+        return Minecraft.getInstance().getWindow().getGuiScaledHeight() / 2;
+    }
+
     public boolean enabled = true;
     public int textColor = 0xFFFFFFFF;
+
+
     public List<String> trackedItems = new ArrayList<>(List.of(
             "minecraft:wind_charge",
             "minecraft:ender_pearl",
@@ -46,11 +60,8 @@ public class ModConfig {
             System.err.println("Failed to load Mace Utils config: " + e.getMessage());
         }
 
-        try (Reader reader = Files.newBufferedReader(CONFIG_PATH)) {
-            INSTANCE = GSON.fromJson(reader, ModConfig.class);
-        } catch (IOException e) {
-            System.err.println("Failed to load Mace Utils config: " + e.getMessage());
-        }
+        if (INSTANCE.itemTrackerX == 0) INSTANCE.itemTrackerX = defaultX();
+        if (INSTANCE.itemTrackerY == 0) INSTANCE.itemTrackerY = defaultY();
     }
 
     public static void save() {

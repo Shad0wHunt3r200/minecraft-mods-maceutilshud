@@ -14,8 +14,8 @@ public class HUDOverlay {
 
         int screenWidth = Minecraft.getInstance().getWindow().getGuiScaledWidth();
 
-        int x = screenWidth - 36;
-        int y = (Minecraft.getInstance().getWindow().getGuiScaledHeight() / 2) - (ModConfig.INSTANCE.trackedItems.size() * 20 / 2);
+        int x = ModConfig.INSTANCE.itemTrackerX;
+        int y = ModConfig.INSTANCE.itemTrackerY - (ModConfig.INSTANCE.trackedItems.size() * 20 / 2);
 
 
         for (String item : ModConfig.INSTANCE.trackedItems) {
