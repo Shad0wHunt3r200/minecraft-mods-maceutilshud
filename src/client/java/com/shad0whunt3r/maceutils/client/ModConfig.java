@@ -59,9 +59,6 @@ public class ModConfig {
         } catch (IOException e) {
             System.err.println("Failed to load Mace Utils config: " + e.getMessage());
         }
-
-        if (INSTANCE.itemTrackerX == 0) INSTANCE.itemTrackerX = defaultX();
-        if (INSTANCE.itemTrackerY == 0) INSTANCE.itemTrackerY = defaultY();
     }
 
     public static void save() {
