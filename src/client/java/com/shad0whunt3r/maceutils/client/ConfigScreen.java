@@ -59,7 +59,7 @@ public class ConfigScreen extends Screen {
                 .build();
 
         var itemTrackerLocationY = Option.<Integer>createBuilder()
-                .name(Component.literal("X Position"))
+                .name(Component.literal("Y Position"))
                 .description(OptionDescription.of(Component.literal("Change the Y position of the Item Tracker HUD. \nDefault position is aligned to the middle of the screen")))
                 .binding(
                         ModConfig.defaultY(),
