@@ -30,8 +30,8 @@ It has not been tested with and will most likely not work with any other version
 
 Latest releases can be found in this repository under Releases
 
-![Total Downloads](https://img.shields.io/github/downloads/Shad0wHunt3r200/minecraft-mods-maceutilshud/total.svg?style=for-the-badge&label=Total%20Downloads&labelColor=green&color=silver)
-![Latest Release Downloads](https://img.shields.io/github/downloads/Shad0wHunt3r200/minecraft-mods-maceutilshud/latest/total.svg?style=for-the-badge&label=Latest%20Release%20Downloads&labelColor=orange&color=gold)
+![Total Downloads](https://img.shields.io/github/downloads/Shad0wHunt3r200/minecraft-mods-maceutilshud/total.svg?style=for-the-badge&label=Total%20Downloads&labelColor=green&color=silver&cacheSeconds=300)
+![Latest Release Downloads](https://img.shields.io/github/downloads/Shad0wHunt3r200/minecraft-mods-maceutilshud/latest/total.svg?style=for-the-badge&label=Latest%20Release%20Downloads&labelColor=orange&color=gold&cacheSeconds=300)
 
 You can also find the download count for each release [here](https://tooomm.github.io/github-release-stats/?username=Shad0wHunt3r200&repository=minecraft-mods-maceutilshud)
 
