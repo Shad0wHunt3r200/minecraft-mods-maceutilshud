@@ -12,6 +12,10 @@ public class MaceUtilsHUDClient implements ClientModInitializer {
 		// This entrypoint is suitable for setting up client-specific logic, such as rendering.
 
 		ModConfig.load();
+		net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientLifecycleEvents.CLIENT_STARTED.register(client -> {
+			if (ModConfig.INSTANCE.itemTrackerX == 0) ModConfig.INSTANCE.itemTrackerX = ModConfig.defaultX();
+			if (ModConfig.INSTANCE.itemTrackerY == 0) ModConfig.INSTANCE.itemTrackerY = ModConfig.defaultY();
+		});
 		HudElementRegistry.attachElementBefore(
 				VanillaHudElements.CHAT,
 				Identifier.fromNamespaceAndPath("maceutils", "hud"),
