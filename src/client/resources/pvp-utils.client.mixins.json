@@ -1,6 +1,6 @@
 {
 	"required": true,
-	"package": "com.shad0whunt3r.maceutils.client.mixin",
+	"package": "com.shad0whunt3r.pvputils.client.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"client": [
 		"ExampleClientMixin"

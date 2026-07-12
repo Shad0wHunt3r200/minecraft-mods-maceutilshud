@@ -1,4 +1,4 @@
-package com.shad0whunt3r.maceutils.client;
+package com.shad0whunt3r.pvputils.client;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -38,7 +38,7 @@ public class ModConfig {
 
     private static final Gson GSON = new GsonBuilder().setPrettyPrinting().create();
     private static final Path CONFIG_PATH = FabricLoader.getInstance()
-            .getConfigDir().resolve("mace-utils.json");
+            .getConfigDir().resolve("pvp-utils.json");
 
     public static ModConfig INSTANCE = new ModConfig();
 

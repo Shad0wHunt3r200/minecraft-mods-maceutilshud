@@ -1,4 +1,4 @@
-package com.shad0whunt3r.maceutils.client;
+package com.shad0whunt3r.pvputils.client;
 
 import net.minecraft.client.DeltaTracker;
 import net.minecraft.client.Minecraft;
