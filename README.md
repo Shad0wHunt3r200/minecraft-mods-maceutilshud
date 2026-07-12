@@ -1,4 +1,4 @@
-# Mace Utils HUD [Development]
+# PvP Utils [Development]
 
 _Please refer to the README in the `main` branch for the full details about this mod_
 
@@ -8,7 +8,7 @@ _Please refer to the README in the `main` branch for the full details about this
 **Planned next version:** 0.3.0
 
 ### ✨ Features
-Working on a new part of the mod, the combat utils (blocks fallen, elytra angle etc.)
+Working on a new part of the mod
 The item counter will receive updates to customization later on.
 
 ### 🪲 Bugfixes
@@ -30,7 +30,7 @@ It has not been tested with and will most likely not work with any other version
 
 ## 🛠️ Building from sources
 
-Mace Utils uses the [Gradle build tool](https://gradle.org/) and can be built with the `gradle build` command. The build
+PvP Utils uses the [Gradle build tool](https://gradle.org/) and can be built with the `gradle build` command. The build
 artifacts (production binaries and their source bundles) can be found in the `build/mods` directory.
 
 The [Gradle wrapper](https://docs.gradle.org/current/userguide/gradle_wrapper.html#sec:using_wrapper) is provided for ease of use and will automatically download and install the
