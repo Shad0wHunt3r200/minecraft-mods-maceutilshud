@@ -1,10 +1,11 @@
-# Mace Utils HUD
+# PvP Utils
 
 ## 📓 Mod Info
 
-This is a mod made for the Mace PvP gamemode in Minecraft. It is meant to give useful information to assist in the intensive gameplay of this gamemode. **This mod does not provide any unfair advantage during gameplay.**
+This is a mod made for PvP in Minecraft :D 
+**This mod does not provide any unfair advantage during gameplay.**
 
-While this mod is mainly developed for Mace PvP, it can also be utilised in other gamemodes like Vanilla (Crystal) PvP. 
+While this mod is mainly developed for PvP, it can also be utilised in other aspects of the game like SMP, Survival and much more 
 
 ---
 
@@ -30,10 +31,10 @@ It has not been tested with and will most likely not work with any other version
 
 Latest releases can be found in this repository under Releases
 
-![Total Downloads](https://img.shields.io/github/downloads/Shad0wHunt3r200/minecraft-mods-maceutilshud/total?style=for-the-badge&label=Total%20Downloads&labelColor=25292e&color=8a2be2&cacheSeconds=300)
-![Latest Release Downloads](https://img.shields.io/github/downloads/Shad0wHunt3r200/minecraft-mods-maceutilshud/latest/total?style=for-the-badge&label=Latest%20Release%20Downloads&labelColor=25292e&color=44cc11&cacheSeconds=300)
+![Total Downloads](https://img.shields.io/github/downloads/Shad0wHunt3r200/minecraft-mods-pvputils/total?style=for-the-badge&label=Total%20Downloads&labelColor=25292e&color=8a2be2&cacheSeconds=300)
+![Latest Release Downloads](https://img.shields.io/github/downloads/Shad0wHunt3r200/minecraft-mods-pvputils/latest/total?style=for-the-badge&label=Latest%20Release%20Downloads&labelColor=25292e&color=44cc11&cacheSeconds=300)
 
-You can also find the download count for each release [here](https://tooomm.github.io/github-release-stats/?username=Shad0wHunt3r200&repository=minecraft-mods-maceutilshud)
+You can also find the download count for each release [here](https://tooomm.github.io/github-release-stats/?username=Shad0wHunt3r200&repository=minecraft-mods-pvputils)
 
 >[!NOTE]
 >**Version Format**<br>
@@ -43,7 +44,7 @@ You can also find the download count for each release [here](https://tooomm.gith
 
 ## 🛠️ Building from sources
 
-Mace Utils uses the [Gradle build tool](https://gradle.org/) and can be built with the `gradle build` command. The build
+PvP Utils uses the [Gradle build tool](https://gradle.org/) and can be built with the `gradle build` command. The build
 artifacts (production binaries and their source bundles) can be found in the `build/mods` directory.
 
 The [Gradle wrapper](https://docs.gradle.org/current/userguide/gradle_wrapper.html#sec:using_wrapper) is provided for ease of use and will automatically download and install the
