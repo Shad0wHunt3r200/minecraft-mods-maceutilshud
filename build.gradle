@@ -20,7 +20,7 @@ loom {
 	splitEnvironmentSourceSets()
 
 	mods {
-		"mace-utils-hud" {
+		"pvp-utils" {
 			sourceSet sourceSets.main
 			sourceSet sourceSets.client
 		}

@@ -1,34 +1,34 @@
 {
 	"schemaVersion": 1,
-	"id": "mace-utils-hud",
+	"id": "pvp-utils",
 	"version": "${version}",
-	"name": "Mace Utils HUD",
-	"description": "A HUD mod for Mace PvP in Minecraft",
+	"name": "PvP Utils",
+	"description": "A mod to improve your PvP experience",
 	"authors": [
 		"Shad0wHunt3r"
 	],
 	"contact": {
-		"sources": "https://github.com/Shad0wHunt3r200/minecraft-mods-maceutilshud",
-		"issues": "https://github.com/Shad0wHunt3r200/minecraft-mods-maceutishud/issues"
+		"sources": "https://github.com/Shad0wHunt3r200/minecraft-mods-pvputils",
+		"issues": "https://github.com/Shad0wHunt3r200/minecraft-mods-pvputils/issues"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/mace-utils-hud/Mace.png",
+	"icon": "assets/pvp-utils/Mace.png",
 	"environment": "client",
 	"entrypoints": {
 		"main": [
-			"com.shad0whunt3r.maceutils.MaceUtilsHUD"
+			"com.shad0whunt3r.pvputils.PvPUtils"
 		],
 		"client": [
-			"com.shad0whunt3r.maceutils.client.MaceUtilsHUDClient"
+			"com.shad0whunt3r.pvputils.client.PvPUtilsClient"
 		],
 		"modmenu": [
-			"com.shad0whunt3r.maceutils.client.ModMenuIntegration"
+			"com.shad0whunt3r.pvputils.client.ModMenuIntegration"
 		]
 	},
 	"mixins": [
-		"mace-utils-hud.mixins.json",
+		"pvp-utils.mixins.json",
 		{
-			"config": "mace-utils-hud.client.mixins.json",
+			"config": "pvp-utils.client.mixins.json",
 			"environment": "client"
 		}
 	],

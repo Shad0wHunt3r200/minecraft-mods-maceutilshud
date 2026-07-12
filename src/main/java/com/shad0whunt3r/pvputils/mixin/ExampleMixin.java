@@ -1,4 +1,4 @@
-package com.shad0whunt3r.maceutils.mixin;
+package com.shad0whunt3r.pvputils.mixin;
 
 import net.minecraft.server.MinecraftServer;
 import org.spongepowered.asm.mixin.Mixin;

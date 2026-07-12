@@ -1,4 +1,4 @@
-package com.shad0whunt3r.maceutils.client;
+package com.shad0whunt3r.pvputils.client;
 
 import com.terraformersmc.modmenu.api.ConfigScreenFactory;
 import com.terraformersmc.modmenu.api.ModMenuApi;
