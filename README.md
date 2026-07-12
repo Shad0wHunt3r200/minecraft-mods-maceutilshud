@@ -1,5 +1,5 @@
-# Mace Utils HUD 
-The code and notes for Mace Utils HUD.
+# PvP Utils  
+The code and notes for PvP Utils.
 
 >[!IMPORTANT]
 >This branch is for **version 1.21.11 of Minecraft**
@@ -27,4 +27,4 @@ The code and notes for Mace Utils HUD.
 Changed version value to `18.5`
 
 >[!NOTE]
->Did not change to 18.1 due to bug fixes in 18.5
+>Did not change to 18.1 due to bug fixes being made in 18.5
