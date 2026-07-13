@@ -22,7 +22,7 @@ public class RangeIndicator {
                 eyePos,
                 reachEnd,
                 player.getBoundingBox().expandTowards(lookVec.scale(MAX_RANGE)),
-                entity -> /*entity instanceof Player &&*/ entity.isAlive(),
+                entity -> entity instanceof Player && entity.isAlive(),
                 MAX_RANGE * MAX_RANGE // distance squared
         );
 
