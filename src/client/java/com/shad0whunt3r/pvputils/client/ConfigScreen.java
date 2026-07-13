@@ -16,7 +16,7 @@ public class ConfigScreen extends Screen {
     private final Screen parent;
 
     public ConfigScreen(Screen parent) {
-        super(Component.literal("Mace Utils Config"));
+        super(Component.literal("PvP Utils Config"));
         this.parent = parent;
     }
 
@@ -36,9 +36,13 @@ public class ConfigScreen extends Screen {
 
         var trackedItemsOption = ListOption.<String>createBuilder()
                 .name(Component.literal("Tracked Items"))
-                .description(OptionDescription.of(Component.literal("List of item IDs to be tracked (e.g., minecraft:elytra)")))
+                .description(OptionDescription.of(Component.literal("List of item IDs to be tracked (e.g., minecraft:golden_apple)")))
                 .binding(
-                        List.of("minecraft:wind_charge", "minecraft:ender_pearl", "minecraft:elytra"), // The Default
+                        List.of("minecraft:shulker_box",
+                                "minecraft:golden_apple",
+                                "minecraft:elytra",
+                                "minecraft:totem_of_undying"), // The default
+
                         () -> ModConfig.INSTANCE.trackedItems,
                         val -> ModConfig.INSTANCE.trackedItems = new ArrayList<>(val)
                 )
@@ -50,7 +54,7 @@ public class ConfigScreen extends Screen {
                 .name(Component.literal("X Position"))
                 .description(OptionDescription.of(Component.literal("Change the X position of the Item Tracker HUD. \nDefault position is aligned to the right of the screen")))
                 .binding(
-                        ModConfig.defaultX(),
+                        ModConfig.defaultItemTrackerX(),
                         () -> ModConfig.INSTANCE.itemTrackerX,
                         val -> ModConfig.INSTANCE.itemTrackerX = val
                 )
@@ -61,7 +65,7 @@ public class ConfigScreen extends Screen {
                 .name(Component.literal("Y Position"))
                 .description(OptionDescription.of(Component.literal("Change the Y position of the Item Tracker HUD. \nDefault position is aligned to the middle of the screen")))
                 .binding(
-                        ModConfig.defaultY(),
+                        ModConfig.defaultItemTrackerY(),
                         () -> ModConfig.INSTANCE.itemTrackerY,
                         val -> ModConfig.INSTANCE.itemTrackerY = val
                 )
@@ -71,18 +75,18 @@ public class ConfigScreen extends Screen {
         var configCategoryGeneral = ConfigCategory.createBuilder()
                 .name(Component.literal("General"))
                 .option(enabledToggle)
-                .option(colorSelector)
                 .build();
 
         var configCategoryItemTracker = ConfigCategory.createBuilder()
                 .name(Component.literal("Item Tracker"))
                 .option(trackedItemsOption)
+                .option(colorSelector)
                 .option(itemTrackerLocationX)
                 .option(itemTrackerLocationY)
                 .build();
 
         var config = YetAnotherConfigLib.createBuilder()
-                .title(Component.literal("Mace Utils HUD Config"))
+                .title(Component.literal("PvP Utils Config"))
                 .categories(List.of(configCategoryGeneral, configCategoryItemTracker))
                 .save(ModConfig::save)
                 .build();

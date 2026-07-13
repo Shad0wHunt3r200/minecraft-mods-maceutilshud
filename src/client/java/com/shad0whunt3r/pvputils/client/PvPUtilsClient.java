@@ -13,8 +13,8 @@ public class PvPUtilsClient implements ClientModInitializer {
 
 		ModConfig.load();
 		net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientLifecycleEvents.CLIENT_STARTED.register(client -> {
-			if (ModConfig.INSTANCE.itemTrackerX == 0) ModConfig.INSTANCE.itemTrackerX = ModConfig.defaultX();
-			if (ModConfig.INSTANCE.itemTrackerY == 0) ModConfig.INSTANCE.itemTrackerY = ModConfig.defaultY();
+			if (ModConfig.INSTANCE.itemTrackerX == 0) ModConfig.INSTANCE.itemTrackerX = ModConfig.defaultItemTrackerX();
+			if (ModConfig.INSTANCE.itemTrackerY == 0) ModConfig.INSTANCE.itemTrackerY = ModConfig.defaultItemTrackerY();
 		});
 		HudElementRegistry.attachElementBefore(
 				VanillaHudElements.CHAT,
