@@ -29,6 +29,6 @@ public class RangeIndicator {
         if (hitResult == null) return null;
 
         var target = hitResult.getEntity(); // to get the entity the raytrace hit
-        return eyePos.distanceTo(target.position()); // find the distance to the target's position
+        return eyePos.distanceTo(target.position()); // find the distance to the target's position at time of raytrace hit
     }
 }
